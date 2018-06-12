@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="quan">
+<!--   底部导航-->
+    <nav>
+        <ul class="clearfix">
+            <li>
+               <a href="index.html"><i class="fa fa-home"></i><span>首页</span></a>
+            </li>
+            <li class="active">
+                 <a href="sort.html"><i class="fa fa-list"></i><span>分类</span></a>
+            </li>
+            <li>
+                 <a href="list.html"><i class="fa fa-dot-circle-o"><i class="not"></i></i><span>觅Me</span></a>
+            </li>
+            <li>
+                 <a href=""><i class="fa fa-shopping-cart"></i><span>购物车</span></a>
+            </li>
+            <li>
+                 <a href=""><i class="fa fa-user-o"></i><span>我的</span></a>
+            </li>
+        </ul>
+    </nav>
+    
+    
+    <!--    搜索条-->
+    <div class="search clearfix">
+        <div class="left">
+            <i class="fa fa-spinner fa-spin"></i>
+            <span>扫啊扫</span>
+        </div>
+        <div class="center">
+           <i class="fa fa-search"></i>
+           <i class="fa fa-microphone"></i>
+            <input type="text" placeholder="华为荣耀8">
+        </div>
+        <div class="right">
+            <i class="fa fa-commenting-o"></i>
+            <span>消息</span>
+        </div>
+    </div>
+
+
+      
+      <div class="main-sort">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-3">
+                    <ul class="sort-nav">
+                     <li class="list">热门推荐</li></a>
+                      <li>数码相机</li>
+                      <li>家用电器</li>
+                      <li>电脑办公</li>
+                      <li>计生情趣</li>
+                      <li>美妆护肤</li>
+                      <li>个护清洁</li>
+                      <li>汽车用品</li>
+                      <li>京东超市</li>
+                      <li>男装</li>
+                      <li>男鞋</li>
+                      <li>女装</li>
+                      <li>女鞋</li>
+                      <li>母婴童装</dli>
+                      <li>运动户外</li>
+                      <li>内衣配饰</li>
+                      <li>家居家装</li>
+                      <li>箱包手袋</li>
+                      <li>钟表珠宝</li>
+                      <li>图书音像</li>
+
+                      </ul>
+                  </div>
+                  <div class="col-xs-9 clerafix">
+                      <div class="top-pic">
+                          <a href=""><img src="img/fenlei/1.jpg" alt=""></a>
+                      </div>
+                      <div class="sort-er">
+                      <div class="txt">
+                          <h4>热门分类</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                     <div id="remai">
+                          <ul>
+                              <li v-for="aee in tuijans">
+                                 <a href=""><img :src="aee.img" alt="">{{aee.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                   <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai1">
+                          <ul>
+                              <li v-for="aee1 in tuijans1">
+                                 <a href=""><img :src="aee1.img" alt="">{{aee1.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai2">
+                          <ul>
+                              <li v-for="aee2 in tuijans2">
+                                 <a href=""><img :src="aee2.img" alt="">{{aee2.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai3">
+                          <ul>
+                              <li v-for="aee3 in tuijans3">
+                                 <a href=""><img :src="aee3.img" alt="">{{aee3.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai4">
+                          <ul>
+                              <li v-for="aee4 in tuijans4">
+                                 <a href=""><img :src="aee4.img" alt="">{{aee4.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai5">
+                          <ul>
+                              <li v-for="aee5 in tuijans5">
+                                 <a href=""><img :src="aee5.img" alt="">{{aee5.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai6">
+                          <ul>
+                              <li v-for="aee6 in tuijans6">
+                                 <a href=""><img :src="aee6.img" alt="">{{aee6.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai7">
+                          <ul>
+                              <li v-for="aee7 in tuijans7">
+                                 <a href=""><img :src="aee7.img" alt="">{{aee7.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai8">
+                          <ul>
+                              <li v-for="aee8 in tuijans8">
+                                 <a href=""><img :src="aee8.img" alt="">{{aee8.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai9">
+                          <ul>
+                              <li v-for="aee9 in tuijans9">
+                                 <a href=""><img :src="aee9.img" alt="">{{aee9.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai10">
+                          <ul>
+                              <li v-for="aee10 in tuijans10">
+                                 <a href=""><img :src="aee10.img" alt="">{{aee10.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai11">
+                          <ul>
+                              <li v-for="aee11 in tuijans11">
+                                 <a href=""><img :src="aee11.img" alt="">{{aee11.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai12">
+                          <ul>
+                              <li v-for="aee12 in tuijans12">
+                                 <a href=""><img :src="aee12.img" alt="">{{aee12.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai13">
+                          <ul>
+                              <li v-for="aee13 in tuijans13">
+                                 <a href=""><img :src="aee13.img" alt="">{{aee13.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai14">
+                          <ul>
+                              <li v-for="aee14 in tuijans14">
+                                 <a href=""><img :src="aee14.img" alt="">{{aee14.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai15">
+                          <ul>
+                              <li v-for="aee15 in tuijans15">
+                                 <a href=""><img :src="aee15.img" alt="">{{aee15.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai16">
+                          <ul>
+                              <li v-for="aee16 in tuijans16">
+                                 <a href=""><img :src="aee16.img" alt="">{{aee16.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai17">
+                          <ul>
+                              <li v-for="aee17 in tuijans17">
+                                 <a href=""><img :src="aee17.img" alt="">{{aee17.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai18">
+                          <ul>
+                              <li v-for="aee18 in tuijans18">
+                                 <a href=""><img :src="aee18.img" alt="">{{aee18.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai19">
+                          <ul>
+                              <li v-for="aee19 in tuijans19">
+                                 <a href=""><img :src="aee19.img" alt="">{{aee19.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  
+                  <div class="sort-er">
+                      <div class="txt">
+                          <h4>手机推荐</h4>
+                          <a href=""><span><i class="fa fa-signal"></i>排行榜<i class="fa fa-angle-right"></i></span></a>
+                      </div>
+                    <div id="remai20">
+                          <ul>
+                              <li v-for="aee20 in tuijans20">
+                                 <a href=""><img :src="aee20.img" alt="">{{aee20.name}}</a> 
+                              </li>
+                          </ul>
+                      </div>
+                      
+                  </div>
+                  </div>
+                  
+                  
+              </div>
+          </div>
+      </div>
+      
+      
+      <!--       置顶-->
+      <div class="top1"></div>
+       <script src="js/vue.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+ <script  src="js/sort.js"></script>
+</body>
+</html>
