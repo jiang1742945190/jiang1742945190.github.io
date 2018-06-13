@@ -63,8 +63,11 @@ countTime();
 window.onscroll = function(){
     if(document.body.scrollTop>115){
         document.querySelector(".search").style.backgroundColor="red";
+        document.querySelector(".search").style.top="0";
     }else{
          document.querySelector(".search").style.backgroundColor="transparent";
+        document.querySelector(".search").style.top="auto";
+
     }
 }
 
