@@ -301,12 +301,12 @@ function enableUI(){
     get("circle").addEventListener("click", clickHandler, false);
     get("hallow").addEventListener("click", clickHandler, false);
     get("kiss").addEventListener("click", clickHandler, false);
-
-    get('wander').addEventListener("change", clickHandler, false);
-    get('friction').addEventListener("change", clickHandler, false);
-    get('mouseDistance').addEventListener("change", clickHandler, false);
-    get('mouseForce').addEventListener("change", clickHandler, false);
-    get('springForce').addEventListener("change", clickHandler, false);
+//
+//    get('wander').addEventListener("change", clickHandler, false);
+//    get('friction').addEventListener("change", clickHandler, false);
+//    get('mouseDistance').addEventListener("change", clickHandler, false);
+//    get('mouseForce').addEventListener("change", clickHandler, false);
+//    get('springForce').addEventListener("change", clickHandler, false);
     get('UI').style.display = "block";
 }
 
