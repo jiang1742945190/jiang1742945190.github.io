@@ -33,10 +33,25 @@ body{
 }
 #UI{
 	color: white;
-	width: 200px;
+	width: 300px;
 	cursor: pointer;
 	position: relative;
 	display: none;
+}
+#UI ul{
+    position: relative;
+    top: 460px;
+    right: -385px;
+    width: 250px;
+}
+#UI li{
+  float: left;
+    margin-right: 10px;
+}
+#UI>div>strong{
+     position: relative;
+    top: 440px;
+    right: -385px;
 }
 #behaviours{
 	margin-top: 10px;
