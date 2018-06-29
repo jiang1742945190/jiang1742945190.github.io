@@ -46,10 +46,10 @@
        </div>
        <div class="password">
           密码：
-           <input type="text">
+           <input type="password">
        </div>
        <div class="register">
-           <a href="">登录</a>
+           <a>登录</a>
        </div>
     </div>
         <div class="main-bottom clearfix">
@@ -124,8 +124,15 @@
             ]
         }
     })
-    
-    
+    var reg = /^123456$/;
+    var deng=document.querySelector(".register");
+    deng.onclick=function(){
+        var ps=document.querySelector(".password input").value;
+        var at=document.querySelector(".account input").value;
+        if(reg.test(ps)&&reg.test(at)){
+            window.location.href="index.html";
+        }
+    }
     
     </script>
     
