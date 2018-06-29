@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body class="new">
+   
+<!--   顶部搜索条-->
+    <div class="header">
+        <div class="header-inner">
+         <div class="container">
+             <div class="row">
+                 <div class="col-xs-2">
+                       <a href="index.html">
+              <i class="fa fa-angle-left"></i>
+          </a>
+                 </div>
+                 <div class="col-xs-10">
+                         <div class="input">
+                         <a href=""><i class="fa fa-search"></i></a>
+                         <input placeholder="请输入搜索内容" type="text">
+                         </div>
+                         
+                 </div>
+             </div>
+         </div>
+        
+        </div>
+    </div>
+   
+    <div class="main">
+        <div class="main-left">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <ul>
+                            <li>推荐</li>
+                            <li>女装</li>
+                            <li>女鞋</li>
+                            <li>运动</li>
+                            <li>男鞋</li>
+                            <li>男装</li>
+                            <li>内衣</li>
+                            <li>户外</li>
+                            <li>儿童</li>
+                            <li>箱包饰品</li>
+                            <li>毛纺羽绒</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-9">
+                       <div class="liuxing1">
+                        
+                           <div id="liuxing">
+                            <ul class="sort-re">
+                               <h4>当季流行</h4>
+                                <li v-for="liu in lius">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                <h4>服饰箱包</h4>
+                                 <li v-for="liu in lius1">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                <h4>户外运动</h4>
+                                 <li v-for="liu in lius3">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                            </ul>
+                                <ul class="sort-er">
+                                <h4>潮流上装</h4>
+                                <li v-for="liu4 in lius4">
+                                    <div class="pic">
+                                        <img :src="liu4.img" alt="">
+                                        <p>{{liu4.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                <h4>优雅裙装</h4>
+                                 <li v-for="liu in lius5">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                <h4>时尚下装</h4>
+                                 <li v-for="liu in lius6">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                            </ul>
+                             <ul class="sort-er">
+                                <h4>时尚女鞋</h4>
+                                <li v-for="liu in lius7">
+                                    <div class="pic">
+                                <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                               
+                            </ul>
+                             <ul class="sort-er">
+                                <h4>运动鞋</h4>
+                                <li v-for="liu in lius8">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                <h4>运动服装</h4>
+                                 <li v-for="liu in lius9">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                </li>
+                                <h4>品质男鞋</h4>
+                                 <li v-for="liu in lius10">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                            </ul>
+                             <ul class="sort-er">
+                                <h4>品质男鞋</h4>
+                                <li v-for="liu in lius10">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                
+                            </ul>
+                             <ul class="sort-er">
+                                <h4>上装</h4>
+                                <li v-for="liu in lius11">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                
+                            </ul>
+                             <ul class="sort-er">
+                                <h4>女士内衣</h4>
+                                <li v-for="liu in lius12">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                <h4>男士内衣</h4>
+                                 <li v-for="liu in lius13">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                               
+                            </ul>
+                             <ul class="sort-er">
+                                <h4>专业服装</h4>
+                                <li v-for="liu in lius14">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                <h4>户外鞋</h4>
+                                 <li v-for="liu in lius15">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                <h4>户外用品</h4>
+                                 <li v-for="liu in lius16">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                            </ul>
+                             <ul class="sort-er">
+                                <h4>上衣</h4>
+                                <li v-for="liu in lius17">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                <h4>下装</h4>
+                                 <li v-for="liu in lius18">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                <h4>鞋</h4>
+                                 <li v-for="liu in lius19">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                            </ul>
+                             <ul class="sort-er">
+                                <h4>精品箱包</h4>
+                                <li v-for="liu in lius20">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                <h4>精品饰品</h4>
+                                 <li v-for="liu in lius21">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                
+                            </ul>
+                             <ul class="sort-er">
+                                <h4>毛纺制品</h4>
+                                <li v-for="liu in lius22">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                                <h4>羽绒</h4>
+                                 <li v-for="liu in lius23">
+                                    <div class="pic">
+                                        <img :src="liu.img" alt="">
+                                        <p>{{liu.name}}</p>
+                                    </div>
+                                    
+                                </li>
+                               
+                            </ul>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+       
+<!--    猜你喜欢-->
+    
+     <div class="weinituijian">
+                <div class="weinituijian-top text-center">
+                <h3>为/你/推/荐</h3>
+           </div>
+           <div id="tuijian">
+               <div class="container clearfix">
+                         
+                           <ul>
+                               <li v-for="arr in arrs">
+                                    <a :href="arr.link"><img :src="arr.img" :alt="arr.name"> </a>
+                                   <i></i>
+                                   <a href=""><h4>{{arr.name}}</h4></a>
+                                   <p class="p1">{{arr.jia}}</p>
+                                    <p class="p2">{{arr.plus}}</p>
+                                    <a class="kan" href="">{{arr.kan}}</a>
+                               </li>
+                           </ul>
+                          
+               </div>
+           </div>
+       </div>
+    
+    
+    
+    
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+     <script>
+    new Vue({
+    el:"#liuxing",
+    data:{
+        lius:[
+            {img:"img/fenlei/201806011130376.jpg",name:"T恤"},
+            {img:"img/fenlei/201806011133056.jpg",name:"短裤"},
+            {img:"img/fenlei/201806011134036.jpg",name:"凉鞋"},
+            {img:"img/fenlei/201806011135046.jpg",name:"连衣裙"},
+            {img:"img/fenlei/201806011135536.jpg",name:"皮肤衣"},
+            {img:"img/fenlei/201806011136416.jpg",name:"内衣"}
+            ],
+        lius1:[
+            {img:"img/fenlei/201806011139156.jpg",name:"T恤"},
+            {img:"img/fenlei/201806011140066.jpg",name:"短裤"},
+            {img:"img/fenlei/201806011140546.jpg",name:"凉鞋"},
+            {img:"img/fenlei/201806011141336.jpg",name:"连衣裙"},
+            {img:"img/fenlei/201806011142206.jpg",name:"皮肤衣"},
+            {img:"img/fenlei/201806011144136.jpg",name:"内衣"},
+            {img:"img/fenlei/201806011146586.jpg",name:"T恤"},
+            {img:"img/fenlei/201806011147446.jpg",name:"短裤"},
+            {img:"img/fenlei/201806011148236.jpg",name:"凉鞋"},
+            {img:"img/fenlei/201806011149246.jpg",name:"连衣裙"},
+            {img:"img/fenlei/201806011149556.jpg",name:"皮肤衣"},
+            {img:"img/fenlei/201806011150286.jpg",name:"内衣"},
+            {img:"img/fenlei/201806011150586.jpg",name:"内衣"},
+            {img:"img/fenlei/201806011151446.jpg",name:"内衣"}
+            ],
+        lius3:[
+            {img:"img/fenlei/201806011152566.jpg",name:"运动鞋"},
+            {img:"img/fenlei/201806011159506.jpg",name:"户外鞋"},
+            {img:"img/fenlei/201806011200476.jpg",name:"冲锋衣"},
+            {img:"img/fenlei/201806011201286.jpg",name:"休闲裤"},
+            {img:"img/fenlei/201806011202106.jpg",name:"长裤"},
+            {img:"img/fenlei/201806011202516.jpg",name:"卫衣"},
+            {img:"img/fenlei/201806011358506.jpg",name:"慢跑鞋"}
+            ],
+         lius4:[
+            {img:"img/fenlei/201806011208166.jpg",name:"女士T桖"},
+            {img:"img/fenlei/201806011208576.jpg",name:"马甲"},
+            {img:"img/fenlei/201806011209406.jpg",name:"衬衫"},
+            {img:"img/fenlei/201806011210286.jpg",name:"夹克/外套"},
+            {img:"img/fenlei/201806011211106.jpg",name:"卫衣/帽衫"},
+            {img:"img/fenlei/201806011214256.jpg",name:"针织衫"},
+            {img:"img/fenlei/201806011216156.jpg",name:"西服"},
+            {img:"img/fenlei/201806011217416.jpg",name:"羊绒衫"},
+            {img:"img/fenlei/201806011218196.jpg",name:"风衣"},
+            {img:"img/fenlei/201806011219016.jpg",name:"大衣"},
+            {img:"img/fenlei/201806011219516.jpg",name:"毛衣"},
+            {img:"img/fenlei/201806011220466.jpg",name:"皮衣"},
+            {img:"img/fenlei/201806011222096.jpg",name:"羽绒服"}
+            ],
+        lius5:[
+            {img:"img/fenlei/201806011223116.jpg",name:"连衣裙"},
+            {img:"img/fenlei/201806011224286.jpg",name:"半身裙"},
+            {img:"img/fenlei/201806011225086.jpg",name:"吊带裙"},
+            {img:"img/fenlei/201806011225486.jpg",name:"牛仔裙"},
+            {img:"img/fenlei/201806011226186.jpg",name:"旗袍"}
+            ],
+        lius6:[
+            {img:"img/fenlei/201806011227256.jpg",name:"牛仔裤"},
+            {img:"img/fenlei/201806011228326.jpg",name:"休闲裤"},
+            {img:"img/fenlei/201806011229066.jpg",name:"打底裤"},
+            {img:"img/fenlei/201806011229426.jpg",name:"阔腿裤"},
+            {img:"img/fenlei/201806011230396.jpg",name:"西裤"}
+            ],
+        lius7:[
+            {img:"img/fenlei/201806011338026.jpg",name:"凉鞋"},
+            {img:"img/fenlei/201806011339026.jpg",name:"拖鞋"},
+            {img:"img/fenlei/201806011339336.jpg",name:"高跟鞋"},
+            {img:"img/fenlei/201806011340056.jpg",name:"方跟单鞋"},
+            {img:"img/fenlei/201806011340436.jpg",name:"布鞋"},
+            {img:"img/fenlei/201806011341296.jpg",name:"休闲鞋"},
+            {img:"img/fenlei/201806011342016.jpg",name:"简靴"}
+            ],
+        lius8:[
+            {img:"img/fenlei/201806011358506.jpg",name:"慢跑鞋"},
+            {img:"img/fenlei/201806011401236.jpg",name:"帆布鞋"},
+            {img:"img/fenlei/201806011402026.jpg",name:"版鞋"},
+            {img:"img/fenlei/201806011402356.jpg",name:"综合训练鞋"},
+            {img:"img/fenlei/201806011403146.jpg",name:"足球鞋"},
+            {img:"img/fenlei/201806011403576.jpg",name:"羽毛球鞋"},
+            {img:"img/fenlei/201806011404426.jpg",name:"蓝球鞋"}
+            ],
+        lius9:[
+            {img:"img/fenlei/201806011405336.jpg",name:"运动短裤"},
+            {img:"img/fenlei/201806011406116.jpg",name:"瑜伽健身"},
+            {img:"img/fenlei/201806011406506.jpg",name:"风衣"},
+            {img:"img/fenlei/201806011407226.jpg",name:"马甲"},
+            {img:"img/fenlei/201806011407596.jpg",name:"夹克"},
+            {img:"img/fenlei/201806011408416.jpg",name:"卫衣"},
+            {img:"img/fenlei/201806011409356.jpg",name:"运动裤子"},
+            {img:"img/fenlei/201806011410306.jpg",name:"长裤"},
+            {img:"img/fenlei/201806011415116.jpg",name:"比基尼"},
+            {img:"img/fenlei/201806011415506.jpg",name:"分体泳衣"},
+            {img:"img/fenlei/201806011416316.jpg",name:"连体泳衣"},
+            {img:"img/fenlei/201806011417036.jpg",name:"男士泳裤"},
+            {img:"img/fenlei/201806011417566.jpg",name:"沙滩裤"},
+            {img:"img/fenlei/201806011418346.jpg",name:"儿童泳裤"},
+            {img:"img/fenlei/201806011419226.jpg",name:"泳镜"},
+            {img:"img/fenlei/201806011420136.jpg",name:"泳帽"},
+            {img:"img/fenlei/201806011628506.jpg",name:"运动配饰"},
+            {img:"img/fenlei/201806011630186.jpg",name:"挎包"},
+            {img:"img/fenlei/201806011631386.jpg",name:"运动袜"},
+            {img:"img/fenlei/201806011632146.jpg",name:"帽子"}
+            ],
+        lius10:[
+            {img:"img/fenlei/201806011627066.jpg",name:"运动短裤"},
+            {img:"img/fenlei/201806011441436.jpg",name:"瑜伽健身"},
+            {img:"img/fenlei/201806011442076.jpg",name:"风衣"},
+            {img:"img/fenlei/201806011442356.jpg",name:"马甲"},
+            {img:"img/fenlei/201806011443136.jpg",name:"夹克"},
+            {img:"img/fenlei/201806011443476.jpg",name:"卫衣"}
+            ],
+        lius11:[
+            {img:"img/fenlei/201806011444446.jpg",name:"短袖"},
+            {img:"img/fenlei/201806011445106.jpg",name:"长袖T桖"},
+            {img:"img/fenlei/201806011445376.jpg",name:"衬衫"},
+            {img:"img/fenlei/201806011446196.jpg",name:"背心"},
+            {img:"img/fenlei/201806011447196.jpg",name:"卫衣/帽衣"},
+            {img:"img/fenlei/201806011448086.jpg",name:"针织衫"},
+            {img:"img/fenlei/201806011448436.jpg",name:"夹克"},
+            {img:"img/fenlei/201806011449126.jpg",name:"羊毛衫"},
+            {img:"img/fenlei/201806011450046.jpg",name:"风衣"},
+            {img:"img/fenlei/201806011450396.jpg",name:"大衣"},
+            {img:"img/fenlei/201806011451096.jpg",name:"皮衣"},
+            {img:"img/fenlei/201806011451476.jpg",name:"棉衣"},
+            {img:"img/fenlei/201806011452316.jpg",name:"羽绒服"}
+            ],
+        lius12:[
+            {img:"img/fenlei/201806011455136.jpg",name:"文胸"},
+            {img:"img/fenlei/201806011455426.jpg",name:"吊带/背心"},
+            {img:"img/fenlei/201806011456086.jpg",name:"女士内裤"},
+            {img:"img/fenlei/201806011456386.jpg",name:"保暖上衣"},
+            {img:"img/fenlei/201806011457436.jpg",name:"保暖裤"},
+            {img:"img/fenlei/201806011458156.jpg",name:"保暖套装"},
+            {img:"img/fenlei/201806011459036.jpg",name:"睡衣/套装"},
+            {img:"img/fenlei/201806011459316.jpg",name:"睡袍"},
+            {img:"img/fenlei/201806011500116.jpg",name:"睡裙"},
+            {img:"img/fenlei/201806011500556.jpg",name:"船袜"},
+            {img:"img/fenlei/201806011503586.jpg",name:"棉袜"},
+            {img:"img/fenlei/201806011505116.jpg",name:"丝袜"},
+            {img:"img/fenlei/201806011505416.jpg",name:"长筒袜"},
+            {img:"img/fenlei/201806011506316.jpg",name:"连裤袜"}
+            ],
+        lius13:[
+            {img:"img/fenlei/201806011507576.jpg",name:"背心/T桖"},
+            {img:"img/fenlei/201806011509506.jpg",name:"男士内裤"},
+            {img:"img/fenlei/201806011510316.jpg",name:"睡衣家具服"},
+            {img:"img/fenlei/201806011511386.jpg",name:"保暖套装"}
+            ],
+        lius14:[
+            {img:"img/fenlei/201806011515396.jpg",name:"冲锋衣"},
+            {img:"img/fenlei/201806011516146.jpg",name:"风衣"},
+            {img:"img/fenlei/201806011516426.jpg",name:"长袖T桖"},
+            {img:"img/fenlei/201806011517196.jpg",name:"马甲"},
+            {img:"img/fenlei/201806011517446.jpg",name:"卫衣"},
+            {img:"img/fenlei/201806011518146.jpg",name:"夹克"},
+            {img:"img/fenlei/201806011518406.jpg",name:"冲锋裤"},
+            {img:"img/fenlei/201806011519126.jpg",name:"速干裤"},
+            {img:"img/fenlei/201806011519376.jpg",name:"休闲裤"}
+            ],
+        lius15:[
+            {img:"img/fenlei/201806011520366.jpg",name:"徒步鞋"},
+            {img:"img/fenlei/201806011521066.jpg",name:"帆布鞋"},
+            {img:"img/fenlei/201806011521316.jpg",name:"户外登山鞋"}
+            ],
+        lius16:[
+            {img:"img/fenlei/201806011522046.jpg",name:"户外包"},
+            {img:"img/fenlei/201806011522346.jpg",name:"登山包"},
+            {img:"img/fenlei/201806011523056.jpg",name:"腰包"},
+            {img:"img/fenlei/201806011523416.jpg",name:"单肩包"},
+            {img:"img/fenlei/201806011524276.jpg",name:"帽子"},
+            {img:"img/fenlei/201806011524536.jpg",name:"头巾"}
+            ],
+        lius17:[
+            {img:"img/fenlei/201806011525566.jpg",name:"连衣裙"},
+            {img:"img/fenlei/201806011526236.jpg",name:"内衣"},
+            {img:"img/fenlei/201806011527016.jpg",name:"背心"},
+            {img:"img/fenlei/201806011527306.jpg",name:"运动上衣"},
+            {img:"img/fenlei/201806011528006.jpg",name:"户外上衣"},
+            {img:"img/fenlei/201806011528356.jpg",name:"马甲"},
+            {img:"img/fenlei/201806011529026.jpg",name:"卫衣"},
+            {img:"img/fenlei/201806011529296.jpg",name:"外套"},
+            {img:"img/fenlei/201806011530086.jpg",name:"毛衣"},
+            {img:"img/fenlei/201806011530546.jpg",name:"棉服"},
+            {img:"img/fenlei/201806011531226.jpg",name:"羽绒服"}
+            ],
+        lius18:[
+            {img:"img/fenlei/201806011532146.jpg",name:"运动裤"},
+            {img:"img/fenlei/201806011532386.jpg",name:"休闲裤"},
+            {img:"img/fenlei/201806011533056.jpg",name:"牛仔裤"},
+            {img:"img/fenlei/201806011533406.jpg",name:"半身裙"},
+            {img:"img/fenlei/201806011633296.jpg",name:"棉裤"},
+            {img:"img/fenlei/201806011535126.jpg",name:"内裤"}
+            ],
+        lius19:[
+            {img:"img/fenlei/201806011535596.jpg",name:"凉鞋"},
+            {img:"img/fenlei/201806011536246.jpg",name:"运动鞋"},
+            {img:"img/fenlei/201806011536506.jpg",name:"帆布鞋"},
+            {img:"img/fenlei/201806011537216.jpg",name:"户外鞋"},
+            {img:"img/fenlei/201806011537446.jpg",name:"皮鞋"},
+            {img:"img/fenlei/201806011538176.jpg",name:"靴子"},
+            {img:"img/fenlei/201806011538466.jpg",name:"棉鞋"}
+            ],
+        lius20:[
+            {img:"img/fenlei/201806011543516.jpg",name:"手提包"},
+            {img:"img/fenlei/201806011544356.jpg",name:"双肩包"},
+            {img:"img/fenlei/201806011545086.jpg",name:"单肩包"},
+            {img:"img/fenlei/201806011545406.jpg",name:"钱包"},
+            {img:"img/fenlei/201806011546136.jpg",name:"腰包"},
+            {img:"img/fenlei/201806011546416.jpg",name:"钥匙包"},
+            {img:"img/fenlei/201806011547096.jpg",name:"电脑包"},
+            {img:"img/fenlei/201806011547426.jpg",name:"旅行袋"},
+            {img:"img/fenlei/201806011548186.jpg",name:"旅行箱"}
+            ],
+        lius21:[
+            {img:"img/fenlei/201806011548586.jpg",name:"腰带"},
+            {img:"img/fenlei/201806011549216.jpg",name:"领带"},
+            {img:"img/fenlei/201711071724356.jpg",name:"围巾"},
+            {img:"img/fenlei/201806011549526.jpg",name:"帽子"}
+            ],
+        lius22:[
+            {img:"img/fenlei/201806011554576.jpg",name:"羊毛衫"},
+            {img:"img/fenlei/201806011555286.jpg",name:"羊绒衫"}
+            ],
+        lius23:[
+            {img:"img/fenlei/201806011555556.jpg",name:"长款羽绒服"},
+            {img:"img/fenlei/201806011556216.jpg",name:"短款羽绒服"},
+            {img:"img/fenlei/201806011556456.jpg",name:"羽绒马甲"}
+            ]
+        
+        }
+    
+})
+    
+        new Vue({
+        el:"#tuijian",
+        data:{
+            arrs:[
+{name:"特丽雅TALIA 单鞋 2017 秋冬 休闲鞋 957029",img:"img/Guess/1.jpg",jia:"￥21.80",kan:"看相似"},
+{name:"Casea Rotie 鞋  春夏 坡跟单鞋 CL1583-6 ",img:"img/Guess/2.jpg",jia:"￥21.80",kan:"看相似"},
+{name:"Casea Rotie 鞋 2016 春夏 平底凉鞋 LS1621-8",img:"img/Guess/3.jpg",jia:"￥155.00",kan:"看相似"},
+{name:"红蜻蜓REDDRAGONFLY 单鞋 2018 春夏 高跟单鞋 QYB910382",img:"img/Guess/4.jpg",jia:"￥50.00",kan:"看相似"},
+{name:"红蜻蜓REDDRAGONFLY 单鞋 2018 春夏 浅口单鞋 QYB960871",img:"img/Guess/5.jpg",jia:"￥138.00",kan:"看相似"},
+{name:"红蜻蜓REDDRAGONFLY 单鞋 2018 春夏 浅口单鞋 QYB960872",img:"img/Guess/6.jpg",jia:"￥27.80",kan:"看相似"},
+{name:"红蜻蜓REDDRAGONFLY 正装鞋 2018 春夏 休闲鞋 QYA962481",img:"img/Guess/7.jpg",jia:"￥18.90",kan:"看相似"},
+{name:"红蜻蜓REDDRAGONFLY 正装鞋 2018 春夏 休闲鞋 QYA962482",img:"img/Guess/8.jpg",jia:"￥99.00",kan:"看相似"},
+{name:"安踏ANTA 夹克/外套 2018 春夏 夹克/外套 15817650-2",img:"img/Guess/26.jpg",jia:"￥27.80",kan:"看相似"},        {name:"安踏ANTA 夹克/外套 2018 春夏 夹克/外套 16817642-4",img:"img/Guess/21.jpg",jia:"￥21.80",kan:"看相似"},       
+{name:"恒泽 T恤  春夏 短袖T恤 T172179",img:"img/Guess/9.jpg",jia:"￥49.00",kan:"看相似"},
+{name:"黛英 女装 2016 不分季节 连衣裙 LAF2088",img:"img/Guess/10.jpg",jia:"￥1199.00",kan:"看相似"},
+{name:"恒泽 连衣裙 2017 春夏 连衣裙 L172018",img:"img/Guess/11.jpg",jia:"￥21.80",kan:"看相似"},
+{name:"YORHE约赫 连衣裙  春夏 连衣裙 YF2199L1",img:"img/Guess/12.jpg",jia:"￥21.80",kan:"看相似"},
+{name:"梦芭莎Moonbasa 连衣裙  春夏 连衣裙 467117329",img:"img/Guess/13.jpg",jia:"￥155.00",kan:"看相似"},
+{name:"ETBOITE 女装 2016 春夏 牛仔裤 E9A107",img:"img/Guess/14.jpg",jia:"￥50.00",kan:"看相似"},
+{name:"GUDAO古道 衬衣 2017 春夏 短袖衬衫 3520217",img:"img/Guess/15.jpg",jia:"￥138.00",kan:"看相似"},
+{name:"三和众 牛仔裤 2018 春夏 牛仔裤 1836",img:"img/Guess/16.jpg",jia:"￥27.80",kan:"看相似"},
+{name:"艾狄米娜Ademina 皮具-女包-女背提包-女单肩带包  春夏 单肩包 AS17-0063",img:"img/Guess/17.jpg",jia:"￥18.90",kan:"看相似"},
+{name:"oodfumiture 皮具-女包-女背提包-女手拎包  不分季节 手提包 ZP-52264-2",img:"img/Guess/18.jpg",jia:"￥99.00",kan:"看相似"},
+{name:"oodfumiture 皮具-女包-女背提包-女单肩带包  不分季节 手提包 ZP-52159-45",img:"img/Guess/19.jpg",jia:"￥49.00",kan:"看相似"},
+{name:"oodfumiture 皮具-女包-女背提包-女手拎包 2018 不分季节 手提包 ZP-52159-50",img:"img/Guess/20.jpg",jia:"￥1199.00",kan:"看相似"},
+
+{name:"威爾遜Werwilson 皮具  秋冬 斜挎包 22130-7",img:"img/Guess/22.jpg",jia:"￥21.80",kan:"看相似"},
+{name:"oodfumiture 皮具-女包-女背提包-女手拎包  不分季节 手提包 ZP-52159-29",img:"img/Guess/23.jpg",jia:"￥155.00",kan:"看相似"},
+{name:"艾狄米娜Ademina 皮具-女包-女背提包-女双肩带包  春夏 双肩包 GS17-6612",img:"img/Guess/24.jpg",jia:"￥50.00",kan:"看相似"},
+{name:"kipling 皮具-女包-女背提包-女双肩带包  春夏 双肩包 K1262215K00F",img:"img/Guess/25.jpg",jia:"￥138.00",kan:"看相似"},
+
+{name:"BOSSSUNWEN 皮具  不分季节 手提包 S15-015440F3T",img:"img/Guess/27.jpg",jia:"￥18.90",kan:"看相似"},
+{name:"暇步士Hush Puppies 皮具  不分季节 钱包/卡包 HC-1511154-551",img:"img/Guess/28.jpg",jia:"￥99.00",kan:"看相似"},
+{name:"Satchi 皮具  不分季节 钱包/卡包 FQ51686-1B",img:"img/Guess/29.jpg",jia:"￥49.00",kan:"看相似"},
+{name:"金利来Goldlion 皮具-男包-男票夹-长款票夹 2018 不分季节 钱包/卡包 AGA7141115131",img:"img/Guess/30.jpg",jia:"￥1199.00",kan:"看相似"}
+            ]
+        }
+    })
+    
+    
+    
+//    点击显示
+    var sortNav = document.querySelectorAll(".main .col-xs-3 ul li");
+var sorlist = document.querySelectorAll(".main .col-xs-9 ul");
+for(var i=0;i<sortNav.length;i++){
+    sortNav[i].index=i;
+    sortNav[i].onclick=function(){
+         for(var i=0;i<sortNav.length;i++){
+        sortNav[i].classList.remove("list");
+         sorlist[i].classList.remove("sort-re");
+            sorlist[i].classList.add("sort-er");
+    }
+    
+   
+    sortNav[this.index].classList.add("list");
+    sorlist[this.index].classList.add("sort-re");
+}
+}
+    
+         
+         
+    </script>
+    
+    
+</body>
+</html>

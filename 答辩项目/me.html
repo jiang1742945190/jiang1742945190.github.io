@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body class="me">
+   
+<!--   顶部搜索条-->
+    <div class="header">
+        <div class="header-inner">
+         <div class="container">
+             <div class="row">
+                 <div class="col-xs-2">
+                       <a href="index.html">
+              <i class="fa fa-angle-left"></i>
+             
+          </a>
+                 </div>
+                 <div class="col-xs-8">
+                         <div class="input">
+                            <h1>登录</h1>
+                         </div>
+                 </div>
+                    <div class="col-xs-2"></div>
+             </div>
+         </div>
+        
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="logo">
+            
+        </div>
+        <div class="register-inner">
+       <div class="account">
+          账号：
+           <input type="text">
+       </div>
+       <div class="password">
+          密码：
+           <input type="text">
+       </div>
+       <div class="register">
+           <a href="">登录</a>
+       </div>
+    </div>
+        <div class="main-bottom clearfix">
+            <a class="a1" href="">注册账号</a>
+            <a class="a2" href="">忘记密码</a>
+        </div>
+    </div>
+    
+          
+<!--    猜你喜欢-->
+    
+     <div class="weinituijian">
+                <div class="weinituijian-top text-center">
+                <h3>为/你/推/荐</h3>
+           </div>
+           <div id="tuijian">
+               <div class="container clearfix">
+                         
+                           <ul>
+                               <li v-for="arr in arrs">
+                                    <a :href="arr.link"><img :src="arr.img" :alt="arr.name"> </a>
+                                   <i></i>
+                                   <a href=""><h4>{{arr.name}}</h4></a>
+                                   <p class="p1">{{arr.jia}}</p>
+                                    <p class="p2">{{arr.plus}}</p>
+                                    <a class="kan" href="">{{arr.kan}}</a>
+                               </li>
+                           </ul>
+                          
+               </div>
+           </div>
+       </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script>
+     new Vue({
+        el:"#tuijian",
+        data:{
+            arrs:[
+{name:"特丽雅TALIA 单鞋 2017 秋冬 休闲鞋 957029",img:"img/Guess/1.jpg",jia:"￥21.80",kan:"看相似"},
+{name:"Casea Rotie 鞋  春夏 坡跟单鞋 CL1583-6 ",img:"img/Guess/2.jpg",jia:"￥21.80",kan:"看相似"},
+{name:"Casea Rotie 鞋 2016 春夏 平底凉鞋 LS1621-8",img:"img/Guess/3.jpg",jia:"￥155.00",kan:"看相似"},
+{name:"红蜻蜓REDDRAGONFLY 单鞋 2018 春夏 高跟单鞋 QYB910382",img:"img/Guess/4.jpg",jia:"￥50.00",kan:"看相似"},
+{name:"红蜻蜓REDDRAGONFLY 单鞋 2018 春夏 浅口单鞋 QYB960871",img:"img/Guess/5.jpg",jia:"￥138.00",kan:"看相似"},
+{name:"红蜻蜓REDDRAGONFLY 单鞋 2018 春夏 浅口单鞋 QYB960872",img:"img/Guess/6.jpg",jia:"￥27.80",kan:"看相似"},
+{name:"红蜻蜓REDDRAGONFLY 正装鞋 2018 春夏 休闲鞋 QYA962481",img:"img/Guess/7.jpg",jia:"￥18.90",kan:"看相似"},
+{name:"红蜻蜓REDDRAGONFLY 正装鞋 2018 春夏 休闲鞋 QYA962482",img:"img/Guess/8.jpg",jia:"￥99.00",kan:"看相似"},
+{name:"安踏ANTA 夹克/外套 2018 春夏 夹克/外套 15817650-2",img:"img/Guess/26.jpg",jia:"￥27.80",kan:"看相似"},        {name:"安踏ANTA 夹克/外套 2018 春夏 夹克/外套 16817642-4",img:"img/Guess/21.jpg",jia:"￥21.80",kan:"看相似"},       
+{name:"恒泽 T恤  春夏 短袖T恤 T172179",img:"img/Guess/9.jpg",jia:"￥49.00",kan:"看相似"},
+{name:"黛英 女装 2016 不分季节 连衣裙 LAF2088",img:"img/Guess/10.jpg",jia:"￥1199.00",kan:"看相似"},
+{name:"恒泽 连衣裙 2017 春夏 连衣裙 L172018",img:"img/Guess/11.jpg",jia:"￥21.80",kan:"看相似"},
+{name:"YORHE约赫 连衣裙  春夏 连衣裙 YF2199L1",img:"img/Guess/12.jpg",jia:"￥21.80",kan:"看相似"},
+{name:"梦芭莎Moonbasa 连衣裙  春夏 连衣裙 467117329",img:"img/Guess/13.jpg",jia:"￥155.00",kan:"看相似"},
+{name:"ETBOITE 女装 2016 春夏 牛仔裤 E9A107",img:"img/Guess/14.jpg",jia:"￥50.00",kan:"看相似"},
+{name:"GUDAO古道 衬衣 2017 春夏 短袖衬衫 3520217",img:"img/Guess/15.jpg",jia:"￥138.00",kan:"看相似"},
+{name:"三和众 牛仔裤 2018 春夏 牛仔裤 1836",img:"img/Guess/16.jpg",jia:"￥27.80",kan:"看相似"},
+{name:"艾狄米娜Ademina 皮具-女包-女背提包-女单肩带包  春夏 单肩包 AS17-0063",img:"img/Guess/17.jpg",jia:"￥18.90",kan:"看相似"},
+{name:"oodfumiture 皮具-女包-女背提包-女手拎包  不分季节 手提包 ZP-52264-2",img:"img/Guess/18.jpg",jia:"￥99.00",kan:"看相似"},
+{name:"oodfumiture 皮具-女包-女背提包-女单肩带包  不分季节 手提包 ZP-52159-45",img:"img/Guess/19.jpg",jia:"￥49.00",kan:"看相似"},
+{name:"oodfumiture 皮具-女包-女背提包-女手拎包 2018 不分季节 手提包 ZP-52159-50",img:"img/Guess/20.jpg",jia:"￥1199.00",kan:"看相似"},
+
+{name:"威爾遜Werwilson 皮具  秋冬 斜挎包 22130-7",img:"img/Guess/22.jpg",jia:"￥21.80",kan:"看相似"},
+{name:"oodfumiture 皮具-女包-女背提包-女手拎包  不分季节 手提包 ZP-52159-29",img:"img/Guess/23.jpg",jia:"￥155.00",kan:"看相似"},
+{name:"艾狄米娜Ademina 皮具-女包-女背提包-女双肩带包  春夏 双肩包 GS17-6612",img:"img/Guess/24.jpg",jia:"￥50.00",kan:"看相似"},
+{name:"kipling 皮具-女包-女背提包-女双肩带包  春夏 双肩包 K1262215K00F",img:"img/Guess/25.jpg",jia:"￥138.00",kan:"看相似"},
+
+{name:"BOSSSUNWEN 皮具  不分季节 手提包 S15-015440F3T",img:"img/Guess/27.jpg",jia:"￥18.90",kan:"看相似"},
+{name:"暇步士Hush Puppies 皮具  不分季节 钱包/卡包 HC-1511154-551",img:"img/Guess/28.jpg",jia:"￥99.00",kan:"看相似"},
+{name:"Satchi 皮具  不分季节 钱包/卡包 FQ51686-1B",img:"img/Guess/29.jpg",jia:"￥49.00",kan:"看相似"},
+{name:"金利来Goldlion 皮具-男包-男票夹-长款票夹 2018 不分季节 钱包/卡包 AGA7141115131",img:"img/Guess/30.jpg",jia:"￥1199.00",kan:"看相似"}
+            ]
+        }
+    })
+    
+    
+    
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body class="index">
+<!--  公告-->
+   <div class="gonggao">
+         <div class="gonggao-inner">
+              <div class="pic">
+               <img src="img/gg.jpg" alt="">
+               </div>
+                <div class="txt">
+              <p>关闭</p>
+              <span>5</span>
+             </div>
+         </div>
+         
+   </div>
+<!--   顶部搜索条-->
+    <div class="header">
+        <div class="header-inner">
+         <div class="container">
+             <div class="row">
+                 <div class="col-xs-2">
+                       <a href="nep.html">
+              <i class="fa fa-bars"></i>
+             
+          </a>
+                 </div>
+                 <div class="col-xs-10">
+                         <div class="input">
+                         <a href=""><i class="fa fa-search"></i></a>
+                         <input placeholder="请输入搜索内容" type="text">
+                         </div>
+                 </div>
+             </div>
+         </div>
+        
+        </div>
+    </div>
+   
+<!--   广告条-->
+   <div class="advertising">
+       <div class="advertising-inner">
+            <div class="container">
+           <div class="row">
+               <div class="col-xs-9">
+                <span>X</span>
+              <div class="col-xs-5"><img src="img/index/logo.png" alt=""></div>
+               <div class="col-xs-7">
+                   <p>APP领88元现金红包</p>
+                   <p>新客专属</p>
+               </div>
+        
+               </div>
+               <div class="col-xs-3">
+                   <a href="">立即打开</a>
+               </div>
+           </div>
+          </div>
+       </div>
+   </div>
+   
+<!--   轮播-->
+   <div class="lunbuo">
+       <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/index/2018061517184413.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/index/2018061315473613.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/index/2018061216064813.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/index/2018061216055813.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/index/2018062016113213.jpg" alt=""></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+            
+         <div class="lunbuo-bottom">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-xs-3">
+                         <a href=""><img src="img/gowu/menu-1.png" alt="">
+                             <p>品牌街</p>
+                         </a>
+                     </div>
+                     <div class="col-xs-3">
+                         <a href=""><img src="img/gowu/menu-2.png" alt="">
+                         <p>上品卡</p>
+                         </a>
+                     </div>
+                     <div class="col-xs-3">
+                         <a href=""><img src="img/gowu/menu-3.png" alt="">
+                         <p>微抢购</p>
+                         </a>
+                     </div>
+                     <div class="col-xs-3">
+                         <a href=""><img src="img/gowu/menu-4.png" alt="">
+                         <p>查订单</p>
+                         </a>
+                     </div>
+                 </div>
+             </div>
+         </div>   
+   </div>
+   
+<!--   滚动部分-->
+   <div class="gundong">
+       <div class="top">
+           <ul class="clearfix">
+               <li>女鞋</li>
+               <li>运动</li>
+               <li>女装</li>
+               <li>男装</li>
+               <li>户外</li>
+               <li>儿童</li>
+               <li>内衣包配</li>
+           </ul>
+       </div>
+       <div class="chuangko">
+            <div class="bottom clearfix" id="gun1">
+              <div class="bottom1">
+                  <div class="bottom-inner">
+                         <ul>
+                             <li v-for="arr in arrs1">
+                                         <div class="pic">
+                                         <img :src="arr.img" alt="">
+                                         <p>{{arr.name}}</p>
+                                    </div>
+                              </li>
+                         </ul>
+                  </div>
+              </div>
+               <div class="bottom2">
+                  <div class="bottom-inner1">
+                         <ul>
+                             <li v-for="arr1 in arrs2">
+                                    <div class="pic1">
+                                         <img :src="arr1.img" alt="">
+                                         <p>{{arr1.name}}</p>
+                                    </div>
+                              </li>
+                         </ul>
+                  </div>
+              </div>
+              <div class="bottom3">
+                  <div class="bottom-inner2">
+                         <ul>
+                             <li v-for="arr2 in arrs3">
+                                         <div class="pic2">
+                                         <img :src="arr2.img" alt="">
+                                         <p>{{arr2.name}}</p>
+                                    </div>
+                              </li>
+                         </ul>
+                  </div>
+              </div>
+               <div class="bottom4">
+                  <div class="bottom-inner3">
+                         <ul>
+                             <li v-for="arr3 in arrs4">
+                                         <div class="pic3">
+                                         <img :src="arr3.img" alt="">
+                                         <p>{{arr3.name}}</p>
+                                    </div>
+                              </li>
+                         </ul>
+                  </div>
+              </div>
+               <div class="bottom5">
+                  <div class="bottom-inner4">
+                         <ul>
+                             <li v-for="arr4 in arrs5">
+                                         <div class="pic4">
+                                         <img :src="arr4.img" alt="">
+                                         <p>{{arr4.name}}</p>
+                                    </div>
+                              </li>
+                         </ul>
+                  </div>
+              </div>
+               <div class="bottom6">
+                  <div class="bottom-inner5">
+                         <ul>
+                             <li v-for="arr5 in arrs6">
+                                         <div class="pic5">
+                                         <img :src="arr5.img" alt="">
+                                         <p>{{arr5.name}}</p>
+                                    </div>
+                              </li>
+                         </ul>
+                  </div>
+              </div>
+               <div class="bottom7">
+                  <div class="bottom-inner6">
+                         <ul>
+                             <li v-for="arr6 in arrs7">
+                                         <div class="pic6">
+                                         <img :src="arr6.img" alt="">
+                                         <p>{{arr6.name}}</p>
+                                    </div>
+                              </li>
+                         </ul>
+                  </div>
+              </div>
+           </div>
+       </div>
+   </div>
+   <div class="main">
+       <div class="container">
+           <div class="row">
+               <div class="col-xs-12 biao">
+                      <p>每周新惊喜</p>
+               </div>
+               <div class="col-xs-12 tu">
+                    <div class="pic">
+                          <img src="img/index/2018062016110113.jpg" alt="">
+                      </div>
+               </div>
+               <div class="col-xs-12 txt">
+                   <p>水孩儿 夏上新 低至3折</p>
+               </div>
+           </div>
+            <div class="row">
+
+               <div class="col-xs-12 tu">
+                    <div class="pic">
+                          <img src="img/index/2018062016113213.jpg" alt="">
+                      </div>
+               </div>
+               <div class="col-xs-12 txt">
+                   <p>运动闪购-VANS潮流运动时尚板鞋低至3折</p>
+               </div>
+           </div>
+            <div class="row">
+
+               <div class="col-xs-12 tu">
+                    <div class="pic">
+                          <img src="img/index/2018061310425613.jpg" alt="">
+                      </div>
+               </div>
+               <div class="col-xs-12 txt">
+                   <p>瓦格纳休闲男装 源自丹麦  低至3折</p>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="main-bottom">
+           <p class="renqi">人气单品</p>
+           <div class="container">
+               <div class="row">
+                  <div id="renqi">
+                    <ul>
+                          <li v-for="renqi in renqis">
+                               <div class="col-xs-12">
+                               <div class="col-xs-5">
+                                   <img :src="renqi.img" alt="">
+                               </div>
+                                <div class="col-xs-7">
+                                   <h3>{{renqi.name}}</h3>
+                                   <span>{{renqi.qian}}</span>
+                                   </div>
+                          </li>
+                      </ul>
+                      
+                   </div>
+                   </div>
+               </div>
+           </div>
+   </div>
+   <footer>
+       <div class="fotoer">
+           <p>北京市上品商业发展有限责任公司</p>
+           <p>地址:北京市朝阳区香宾路66-1号</p>
+           <p class="ding">联系电话：4008980808</p>
+           <div class="zhiding">
+     <i class="fa fa-arrow-up"></i>
+ </div>
+       </div>
+        
+   </footer>
+   
+<!--   底部导航-->
+    <div class="nav">
+        <div class="container">
+            <div class="row">
+               <a href="">
+                <div class="col-xs-3 list">
+                    <ul>
+                        <i class="fa fa-home"></i>
+                        <li>首页</li>
+                    </ul>
+                </div>
+                </a>
+                <a href="nep.html">
+                <div class="col-xs-3">
+                    <ul>
+                        <i class="fa fa-bars"></i>
+                        <li>分类</li>
+                        </a>
+                    </ul>
+                </div>
+                <a href="shopping.html">
+                <div class="col-xs-3">
+                    <ul>
+                        <i class="fa fa-shopping-cart"></i>
+                        <li>购物车</li>
+                        </a>
+                    </ul>
+                </div>
+                <a href="me.html">
+                 <div class="col-xs-3">
+                    <ul>
+                        <i class="fa fa-user-o"></i>
+                        <li>我</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+<!--    回到顶部部分-->
+ 
+    
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+       
+       
+       </script>
+ 
+</body>
+</html>
